@@ -10,7 +10,7 @@ function getStringAfterEquals(inputString) {
 
 async function readBuildFile(branchName) {
   if (!branchName) return;
-  const url = `https://api.github.com/repos/abhinavv245/ONDC-SRV-Specifications/contents/ui/build.js?ref=${branchName}`;
+  const url = `https://api.github.com/repos/ONDC-Official/ONDC-SRV-Specifications/contents/ui/build.js?ref=${branchName}`;
   const features = await getFeatures(branchName)
  
   try {
@@ -60,8 +60,8 @@ async function fetchRequest(url){
 
 async function loadContracts() {
   //fetch branches & tags from repo
-  const BRANCHES_URL= "https://api.github.com/repos/abhinavv245/ONDC-SRV-Specifications/branches";
-  const TAGS_URL= "https://api.github.com/repos/abhinavv245/ONDC-SRV-Specifications/tags";
+  const BRANCHES_URL= "https://api.github.com/repos/ONDC-Official/ONDC-SRV-Specifications/branches";
+  const TAGS_URL= "https://api.github.com/repos/ONDC-Official/ONDC-SRV-Specifications/tags";
                   
   let response1, response2;
   response1 = await fetchRequest(BRANCHES_URL)

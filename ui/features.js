@@ -18,7 +18,7 @@ function toUnderscoreCase(inputText) {
 }
 async function getFeatures(branchName) {
   if (!branchName) return;
-  const url = `https://api.github.com/repos/tanyamadaan/ONDC-SRV-Specifications/contents/api/docs?ref=${branchName}`;
+  const url = `https://api.github.com/repos/ONDC-Official/ONDC-SRV-Specifications/contents/api/docs?ref=${branchName}`;
 
   try {
     const response = await fetch(url, {
